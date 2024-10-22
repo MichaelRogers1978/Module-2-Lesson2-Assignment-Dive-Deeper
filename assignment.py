@@ -1,37 +1,29 @@
-# task1
+#task 1.1
 
-place = input("Choose your place. (forrest/cave): ")
-
-
-if place == "forrest":
-    action = input("What do you want to do? (climb tree/cross river) ")
-
-    if action == "climb tree":
-        print("You found a birds nest!")
-    elif action == "cross river":
-        print("You found a boat!")
-elif place == "cave":
-    action = input("What do you want to do? (light torch/proceed in dark)")
-   
-    if action == ("light torch"):
-        print("You can now see!")
-    elif action == ("proceed in dark"):
-        print("Watch out for spiders!")
+number = int(input("Enter a number:"))
+if number > 0:
+    print("The number is positive.")
+elif number == 0:
+    print("The number is zero.")
 else:
-    pass
+    print("The number is negitive.")
 
 
-#task2
+#task 2.1
 
-attendees = input("Enter number of attendees: ")
+users_number_one = int(input ("number 1: "))
+users_number_two = int(input ("number 2: "))
+users_number_three = int(input ("number 3: "))
+if users_number_one <= users_number_two and users_number_one <= users_number_three:
+    print(f"The smallest number is {users_number_one}")
+elif users_number_two <= users_number_three and users_number_two <= users_number_one:
+    print(f"The smallest number is {users_number_two}")
+elif users_number_three <= users_number_one and users_number_three <= users_number_two:
+    print(f"The smallest number is {users_number_three}")
 
-venue = "large hall with audio system" if int(attendees) > 100 else "conference room with projector" 
-print(venue)
-type_of_meal = input("do you want vegetarian? (yes/no):")
-# if type_of_meal == "yes":
-#     print("Veggie Delight Caterers")
-# else:
-#     print("Gourmet Meals Caterers")
-
-output = "Veggie Delight Caterers" if type_of_meal == "yes" else "Gourmet Meals Caterers"
-print(output)
+if users_number_one >= users_number_two and users_number_one >= users_number_three:
+    print(f"The largest number is {users_number_one}")
+elif users_number_two >= users_number_three and users_number_two >= users_number_one:
+    print(f"The largest number is {users_number_two}")
+elif users_number_three >= users_number_one and users_number_three >= users_number_two:
+    print(f"The largest number is {users_number_three}")
